@@ -6,7 +6,7 @@ Created on Thu Jun 15 15:45:40 2023
 @author: mnasir
 
 Description:
-    This script processes a stimulus file containing a 3D matrix from a MATLAB .mat file, downsampled the 3D matrix from
+    This script processes a stimulus file, containing a 3D matrix of video frames from a MATLAB .mat file, downsampled the 3D matrix from
     300x300x300 to 64x64x300 dimensions, and then converts the downsampled data into text files. Each text file corresponds
     to a specific pixel in the 64x64 frame and contains a time series of 300 timepoints. The text files are named according
     to their pixel coordinates (e.g., textfilex1y1.txt, textfilex1y2.txt, etc.).
