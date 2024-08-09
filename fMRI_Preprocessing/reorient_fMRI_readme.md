@@ -44,7 +44,7 @@ Execute the script using Python 3:
 
 ``` bash
 
-python3 convert_to_mni.py
+python3 reorient_fMRI.py
 ```
 ## Script Execution
 The script performs the following actions:
