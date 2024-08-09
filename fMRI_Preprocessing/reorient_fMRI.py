@@ -18,7 +18,7 @@ Prerequisites:
 
 Usage:
 - Update the directory paths (`subject_directory` and `subject_directory_output`) as needed.
-- Run the script using Python 3: `python3 convert_to_mni.py`
+- Run the script using Python 3: `python3 reorient_fMRI.py`
 """
 
 import os
