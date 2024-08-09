@@ -96,14 +96,11 @@ if not os.path.exists(subject_directory_output):
 ```
 
 ## Note on Script Testing
-The loop currently breaks after processing the first task folder and the first subject folder. This is for testing purposes. To process all subjects and tasks, remove the break statements:
+In the presence of 'break' statement, the loop will finish after processing the first task folder and the first subject folder, this is for testing purposes. To process all subjects and tasks, donot uncomment the remove the break statements:
 
 ``` python
-
-# Remove the break statement to process all tasks.
 # break  # Remove this break statement to process all tasks.
 
-# Remove the break statement to process all subjects.
 # break  # Remove this break statement to process all subjects.
 ```
 
