@@ -6,7 +6,7 @@ This repository contains Python scripts for processing a stimulus file from a MA
 
 ## Scripts
 
-### 1. Downsampling Script: `1_Downsampling.py`
+### 1. Downsampling Script: `1_downsampling.py`
 
 **Description:**  
 This script processes a stimulus file containing a 3D matrix of video frames from a MATLAB `.mat` file. It downsamples the matrix from `300x300x300` to `64x64x300` dimensions and converts the downsampled data into text files. Each text file corresponds to a specific pixel in the `64x64` frame and contains a time series of `300` timepoints.
