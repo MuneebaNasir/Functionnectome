@@ -45,7 +45,7 @@ done
 
 ## Workflow
 
-1. **Submit Jobs**: Run the `batch_merge_s4d_func_asso.sh` script to submit 64 jobs, each processing a different `x`-axis value.
+1. **Submit Jobs**: Run the `Parallel_batch_randomise.sh` script to submit 64 jobs, each processing a different `x`-axis value.
    ```bash
    sbatch Parallel_batch_randomise.sh
    ```
