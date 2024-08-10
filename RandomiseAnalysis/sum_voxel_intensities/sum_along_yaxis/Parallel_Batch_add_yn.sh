@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=batch_merge_xn   # Name of the SLURM job
+#SBATCH --job-name=batch_merge_yn   # Name of the SLURM job
 #SBATCH --partition=highmem # Partition to submit to
 
 # Load the FSL module (FSL version 6.0.4)
