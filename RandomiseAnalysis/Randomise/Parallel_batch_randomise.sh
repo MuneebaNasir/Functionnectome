@@ -27,5 +27,5 @@ for ((x=1; x<=64; x++)); do
     # Submit a Slurm job for each x-value using the determined partition
     # The job name is set based on the current x-value
     # The "parallel_merge_s4d_func_asso.sh" script will be executed with the current x-value as an environment variable
-    sbatch --job-name="${x}_batch" --export=i="$x" --partition=$partition parallel_merge_s4d_func_asso.sh
+    sbatch --job-name="${x}_batch" --export=i="$x" --partition=$partition randomise.sh
 done
