@@ -24,7 +24,7 @@ done
 # If there are any files in the file_paths array
 if [[ ${#file_paths[@]} -gt 0 ]]; then
     # Define the output file path where the resulting image will be saved
-    output_file="$subject_folder/data_y_xn_add/4d_x${x}yn.nii.gz"
+    output_file="$subject_folder/data_y_xn_add/4d_y${y}xn.nii.gz"
 
     # Initialize the command for fslmaths with the first file in the array
     command="fslmaths ${file_paths[0]}"
