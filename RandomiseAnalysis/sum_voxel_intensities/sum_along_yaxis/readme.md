@@ -1,5 +1,5 @@
 
-# Summing Voxel Intensities Along X Axis
+# Summing Voxel Intensities Along Y Axis
 
 This documentation describes two SLURM batch scripts designed to perform voxel-wise addition of NIfTI images, summing the intensity values for each voxel across multiple images.
 
