@@ -3,20 +3,17 @@
 
 This documentation describes two SLURM batch scripts designed to perform voxel-wise addition of NIfTI images, summing the intensity values for each voxel across multiple images.
 
-- **Number of Files**: 64 files per `y` index, where `x` ranges from 1 to 64.
-- **Resulting Files**: For each `y` index, the result is a single NIfTI file named `y1xn.nii.gz`, which is the sum of files `y1x1.nii.gz`, `y1x2.nii.gz`, ..., `y1x64.nii.gz`.
 
 ## Scripts
 
 ### `Parallel_Batch_add_xn.sh`
 
 - **Function**: Submits SLURM jobs to process files for each `y` index.
-- **Creates**: A job for each `y` value, which runs `add_xn.sh`.
-
+- **Creates**: it run 64 sbatch commands for a different value of y ranging from 1-64.
 ### `add_xn.sh`
 
 - **Function**: Processes files for a specific `y` index by summing voxel intensities along the `x` axis using `fslmaths`.
-- **Result**: Outputs files named `4d_x64yn.nii.gz`, where `y` is the specific index and `x` ranges from 1 to 64.
+- **Result**: For each `y` index, the result is a single NIfTI file named `y1xn.nii.gz`, which is the sum of files `y1x1.nii.gz`, `y1x2.nii.gz`, ..., `y1x64.nii.gz`.
 
 
 
