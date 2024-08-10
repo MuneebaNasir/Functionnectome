@@ -27,7 +27,7 @@ for ((x=1; x<=64; x++)); do
 done
 ```
 
-### `merge.sh`
+### `randomise.sh`
 
 This script is run by each Slurm job to process all `y`-axis values for a given `x`-axis value. It performs t-tests using the FSL `randomise` tool and merges the results.
 
