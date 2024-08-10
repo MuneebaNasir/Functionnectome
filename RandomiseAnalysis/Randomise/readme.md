@@ -6,10 +6,10 @@ This repository contains two scripts designed to automate the t-test analysis of
 ## Overview
 
 The workflow involves:
-1. **`batch_merge_s4d_func_asso.sh`** - Submits Slurm jobs to process data for each `x`-axis value across all `y`-axis values.
-2. **`parallel_merge_s4d_func_asso.sh`** - Processes stimulus `.mat` files and associated `.nii.gz` files for all `y`-axis values corresponding to a specific `x`-axis value.
+1. **`Parallel_batch_merge.sh`** - Submits Slurm jobs to process data for each `x`-axis value across all `y`-axis values.
+2. **`merge.sh`** - Processes stimulus `.mat` files and associated `.nii.gz` files for all `y`-axis values corresponding to a specific `x`-axis value.
 
-### `batch_merge_s4d_func_asso.sh`
+### `Parallel_batch_merge.sh`
 
 This script submits 64 jobs, each corresponding to an `x`-axis value. Jobs are distributed across different partitions (`highmem`, `normal`, `gindev`) to balance the workload.
 
@@ -23,11 +23,11 @@ for ((x=1; x<=64; x++)); do
     else
         partition="gindev"
     fi
-    sbatch --job-name="${x}_batch" --export=i="$x" --partition=$partition parallel_merge_s4d_func_asso.sh
+    sbatch --job-name="${x}_batch" --export=i="$x" --partition=$partition merge.sh
 done
 ```
 
-### `parallel_merge_s4d_func_asso.sh`
+### `merge.sh`
 
 This script is run by each Slurm job to process all `y`-axis values for a given `x`-axis value. It performs t-tests using the FSL `randomise` tool and merges the results.
 
@@ -47,7 +47,7 @@ done
 
 1. **Submit Jobs**: Run the `batch_merge_s4d_func_asso.sh` script to submit 64 jobs, each processing a different `x`-axis value.
    ```bash
-   sbatch batch_merge_s4d_func_asso.sh
+   sbatch Parallel_batch_merge.sh
    ```
 
 2. **Job Processing**: Each job processes all `y`-axis values (`y=1` to `y=64`) for its assigned `x`-axis value, performing t-tests and merging results.
@@ -63,7 +63,7 @@ done
 1. Place `.mat` and `.nii.gz` files in the specified directories.
 2. Run the Slurm script to begin processing:
    ```bash
-   sbatch batch_merge_s4d_func_asso.sh
+   sbatch Parallel_batch_merge.sh
    ```
 3. Monitor job progress with Slurm commands like `squeue`.
 
