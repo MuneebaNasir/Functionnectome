@@ -1,7 +1,7 @@
 
 # Batch Processing for fMRI Analysis with Slurm and FSL
 
-This repository contains two scripts designed to automate the t-test analysis of fMRI data using FSL's `randomise` tool within a Slurm-managed  environment.
+This folder contains two scripts designed to automate the t-test analysis of fMRI data using FSL's `randomise` tool within a Slurm-managed  environment.
 
 ## Overview
 
