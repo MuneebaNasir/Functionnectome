@@ -1,5 +1,5 @@
 
-# fMRI Analysis Pipeline
+#  Finding impact of White Matter Connectivity on Brain Functions and Structure in Visual Processing. 
 
 ## Overview
 
