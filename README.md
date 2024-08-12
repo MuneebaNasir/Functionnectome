@@ -3,7 +3,9 @@
 
 ## Overview
 
-This repository contains a series of scripts and tools for processing and analyzing fMRI data. The workflow includes preprocessing stimuli, converting neuroimaging data to a standard space, performing functional connectivity analyses, and applying statistical analyses. The pipeline is designed to work with fMRI data and involves several steps to ensure accurate and comprehensive analysis.
+This repository contains a series of scripts and tools for processing and analyzing fMRI data. The workflow includes preprocessing stimuli, converting neuroimaging data to a standard space, performing functional connectivity analyses, and applying statistical analyses. The pipeline is designed to work with fMRI data and involves several steps to ensure accurate and comprehensive analysis. 
+For further information and results, see the [thesis report](https://drive.google.com/file/d/1qRR232acUeL-FRPvsEP3Ti2wympBlMqA/view).
+
 
 ## Project Structure
 
