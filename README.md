@@ -1,5 +1,5 @@
 
-#  Finding impact of White Matter Connectivity on Brain Functions and Structure in Visual Processing. 
+#  Network Analysis and the Emergent Properties of Human Visual Circuit
 
 ## Overview
 
